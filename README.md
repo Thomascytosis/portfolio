@@ -29,6 +29,5 @@ A webpage to disploy my projects and interests.
     * Amplify
 
 # Need Fixes
-* format portfolio Dates
-* Sort portfolio items by Date, most Recent first.
+* format portfolio Dates? maybe?
 * pagination portfolio cards

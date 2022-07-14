@@ -16,7 +16,7 @@ export default function Enthusiast({
     Info</Button>
   } else { button = ""};
     return (
-        <Card className="col ent--card bg-dark text-white m-1">
+        <Card className="col ent--card bg-dark text-white m-1 overlay">
           <Card.Img src={img} alt="Card image" />
           <Card.Title>{name}</Card.Title>
           <Card.Text className="cardText">

@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 
 export default function Education(props){
     return (
-        <Card className="col edu--card bg-dark text-white m-1">
+        <Card className="col edu--card bg-dark text-white m-1 overlay">
             <Card.Img src={props.img} alt="Card image" />
             <Card.Title>{props.name}</Card.Title>
             <Card.Text className="cardText">{props.description}</Card.Text>

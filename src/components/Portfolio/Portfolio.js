@@ -37,7 +37,7 @@ export default function Portfolio({
                 {description}
               </Card.Text>
               <Card.Text className="port--date cardText">Created : {created_at}</Card.Text>
-              <Button className="port-btn" variant="danger" onClick={handleShow}>Example</Button>
+              <Button className="port--btn" variant="danger" onClick={handleShow}>Example</Button>
             </Card.ImgOverlay>
           </Card>
 )

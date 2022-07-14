@@ -31,6 +31,7 @@ export default function Navigation(){
       clicked = true;
     }
   }
+  const strDescending = [...repos].sort((a,b) => a.created_at > b.created_at ? -1 : 1,);
     return (
         <Tab.Container id="left-tabs-example" defaultActiveKey="about">
         <Row>
@@ -64,7 +65,7 @@ export default function Navigation(){
               <Tab.Pane eventKey="portfolio">
               <Container>
               <Row>
-                {repos.map(repo => (
+                {strDescending.map(repo => (
                 <Portfolio 
                   id={repo.id}
                   name={repo.name}
