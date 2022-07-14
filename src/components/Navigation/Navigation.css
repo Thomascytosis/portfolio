@@ -1,0 +1,12 @@
+.nav--link{
+    cursor:pointer;
+    color: rgb(0,106,132);
+}
+.nav--link:hover{
+    background-color:  rgba(82, 9, 72, 0.35);
+    color: white;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link{
+    background-color: rgb(0,106,132);
+}

@@ -1,0 +1,46 @@
+h6 {
+    position: relative;
+    top:5px;
+    left: 5px;
+    color:darkgrey;
+}
+.form-control {
+    background-color:rgb(24,26,27);
+    border-color:rgb(60,65,68);
+    color:white;
+}
+.form-control:focus {
+    color: white;
+    background-color: black;
+    border-color: rgba(82, 9, 72);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(0,106,132,.65);
+}
+.btn-outline-danger{
+    color:rgba(82, 9, 72);
+    border-color: rgba(82, 9, 72);
+}
+.btn-outline-danger:hover{
+    background-color:rgb(0,106,132,.65);
+    border-color:rgba(82, 9, 72);
+}
+.btn-outline-danger:focus{
+    border-color: rgba(82, 9, 72);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(0,106,132,.65);
+}
+.btn-outline-danger:active{
+    border-color: rgba(82, 9, 72);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(0,106,132,.65);
+}
+.messageStyle{
+    background-color:black;
+    color:white;
+}
+.text-info{
+    background-color:black;
+}
+.icon{
+    font-size:5rem;
+}

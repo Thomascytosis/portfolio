@@ -1,0 +1,10 @@
+.ft--text {
+    color:rgb(0,106,132);
+}
+.icon{
+    padding:0;
+    margin:0;
+}
+svg.icon.btn:hover{
+   background-color:rgb(82, 9, 72);
+}

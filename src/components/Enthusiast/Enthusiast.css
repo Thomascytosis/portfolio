@@ -1,0 +1,18 @@
+.ent--card{
+    overflow:auto;
+    min-width: 200px;
+    min-height: 200px;
+    text-shadow: 1px 1px 1px black;
+}
+.ent--btn{
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    border-color:rgb(0,106,132);
+    color:rgb(0,106,132);
+}
+.ent--btn:hover{
+    background-color:rgba(82, 9, 72);
+    border-color:rgb(0,106,132);
+
+}
