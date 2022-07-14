@@ -1,6 +1,8 @@
 # My Portfolio Webpage
 A webpage to disploy my projects and interests.
 
+pagination portfolio cards![portfolioWebsite](https://user-images.githubusercontent.com/22608842/179091517-48f49ae7-7cd1-4da0-a00d-9906c65eb2cd.jpg)
+
 # Currently working on:
 * About Page
   * Career Goals
@@ -31,4 +33,3 @@ A webpage to disploy my projects and interests.
 # Need Fixes
 * format portfolio Dates
 * Sort portfolio items by Date, most Recent first.
-* pagination portfolio cards![portfolioWebsite](https://user-images.githubusercontent.com/22608842/179091517-48f49ae7-7cd1-4da0-a00d-9906c65eb2cd.jpg)
