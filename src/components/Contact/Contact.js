@@ -58,13 +58,13 @@ export default function Contact(){
     const handleClose = () => setShow(false);
     
     return (
-        <Container>
+        <Container className="contact--container">
             <Image
-                className="d-block w-100 p-3"
+                className="d-block w-100"
                 src={image7}
                 alt="cyan lighted room with hacker wearing virtual reality goggles"
               />
-            <Form onSubmit={onSubmit} id="myForm">
+            <Form onSubmit={onSubmit} id="myForm" className="p-3">
                 <Form.Group className="mb-3 bg-dark text-white">
                     <Form.Label htmlFor="name"><h6>Name</h6></Form.Label>
                     <Form.Control required type="text" value={form.name} id="name" placeholder="name" onChange={(e) => updateForm({ name: e.target.value })} />

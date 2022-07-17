@@ -4,3 +4,6 @@ h3 {
 p {
     cursor:default;
 }
+.carousel--container{
+    padding:.5% 0%;
+}

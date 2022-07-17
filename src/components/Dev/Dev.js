@@ -8,10 +8,12 @@ import "./Dev.css";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 
 export default function Dev(){
     return (
-        <Container className="row">
+        <Container className="dev--container">
+        <Row className="m-0">
         <Card className="col dev--card bg-dark text-white m-1 overlay">
           <Card.Img src={image14} alt="Card image" />
             <Card.Title>Javascript</Card.Title>
@@ -39,6 +41,7 @@ export default function Dev(){
     </Card.Text>
     <Button className="dev--btn" variant="outline-primary">Go somewhere</Button>
 </Card>
+</Row>
 </Container>
 )
 }

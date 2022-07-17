@@ -42,3 +42,6 @@
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgb(82, 9, 72,.65);
 }
+.port--container{
+    padding:.09% 2%;
+}

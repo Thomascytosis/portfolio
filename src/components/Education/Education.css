@@ -1,3 +1,10 @@
+.overlay {
+    overflow:auto;
+    background-color:rgba(0, 0, 0, 0.65);
+}
+.overlay:hover{
+    background: linear-gradient(to right, rgba(0, 106, 132, 0.65),rgb(82, 9, 72,.65));
+}
 .edu--card{
     overflow:auto;
     min-width: 200px;
@@ -15,4 +22,7 @@
     background-color:rgba(82, 9, 72);
     border-color:rgb(0,106,132);
 
+}
+.edu--container{
+    padding:.09% 2%;
 }

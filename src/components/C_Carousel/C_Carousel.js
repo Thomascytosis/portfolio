@@ -5,9 +5,10 @@ import image2 from "./a (17).jpg";
 import image3 from "./IMAG0188.jpg";
 
 import "./C_Carousel.css";
+import Container from "react-bootstrap/Container";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Carousel from "react-bootstrap/Carousel"
+import Carousel from "react-bootstrap/Carousel";
 
 export default function ControlledCarousel() {
         const [index, setIndex] = useState(0);
@@ -17,6 +18,7 @@ export default function ControlledCarousel() {
         };
       
         return (
+          <Container className="carousel--container">
           <Carousel activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item>
               <img
@@ -54,5 +56,6 @@ export default function ControlledCarousel() {
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
+          </Container>
         );
       }

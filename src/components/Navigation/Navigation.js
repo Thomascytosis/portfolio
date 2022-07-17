@@ -63,8 +63,8 @@ export default function Navigation(){
                 <Carousel />
               </Tab.Pane>
               <Tab.Pane eventKey="portfolio">
-              <Container>
-              <Row>
+              <Container className="port--container">
+              <Row className="m-0">
                 {strDescending.map(repo => (
                 <Portfolio 
                   id={repo.id}
@@ -84,8 +84,8 @@ export default function Navigation(){
               <Contact />
               </Tab.Pane>
               <Tab.Pane eventKey="education">
-              <Container>
-              <Row>
+              <Container className="edu--container">
+              <Row className="m-0">
                   {edu.map(item => (
                   <Education
                   name={item.name}
@@ -99,8 +99,8 @@ export default function Navigation(){
                 </Container>
               </Tab.Pane>
               <Tab.Pane eventKey="enthusiast">
-              <Container>
-              <Row>
+              <Container className="ent--container">
+              <Row className="m-0">
                   {data.map(item => (
                   <Enthusiast
                   name={item.name}
