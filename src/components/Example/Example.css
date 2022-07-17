@@ -21,6 +21,19 @@
 }
 .btn-outline-danger{
     font-weight: bold;
+    color:blueviolet;
+    border-color:blueviolet;
+}
+.btn-outline-danger:hover{
+    font-weight: bold;
+    color:white;
+    border-color:blueviolet;
+}
+.btn-outline-danger:active{
+    border-color:blueviolet;
+}
+.btn-outline-danger:focus{
+    border-color:blueviolet;
 }
 .modal-header{
     border-color:rgb(0,106,132);
