@@ -21,6 +21,11 @@ export default function Example(props){
       image = props.img
     };
 
+    var toUrl = ''
+    if (props.link) {
+      toUrl = <Button as="a" variant="outline-danger" href={props.link} target="_blank">Go to the Website</Button>
+    } else { toUrl = ""};
+
     return (
         <Modal className="example" centered show={props.show} onHide={props.close}>
         <Modal.Header className="text-white" closeButton>
@@ -35,9 +40,7 @@ export default function Example(props){
           <Button as="a" variant="outline-success" href={props.url} target="_blank">
             Go to the Github Repository
           </Button>
-          <Button as="a" variant="outline-danger" href={props.link} target="_blank">
-            Go to the Website
-          </Button>
+          {toUrl}
         </Modal.Footer>
         </Modal>
     )

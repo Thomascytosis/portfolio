@@ -45,3 +45,9 @@
 .port--container{
     padding:.09% 2%;
 }
+.port--btn{
+    border-color:blueviolet;
+}
+.icon--wifi{
+    color: blueviolet;
+}
