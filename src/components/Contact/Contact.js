@@ -33,19 +33,10 @@ export default function Contact(){
       
         // When a post request is sent to the create url, we'll add a new record to the database.
         const newContact = { ...form };
-      
-        await fetch("http://localhost:5000/record/add", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(newContact),
-        })
-        .catch(error => {
-          window.alert(error);
-          return;
-        });
-        console.log("async fetch and catch errors")
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "https://cpsrzg5uur5wiophmnozwolz5i0bhajl.lambda-url.us-east-1.on.aws/", true);
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.send(JSON.stringify(newContact));
       
         setForm({ name: "", company: "", email: "", message:"" });
         handleClose();
