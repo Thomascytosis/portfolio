@@ -1,47 +1,28 @@
 import React from "react";
 
-import image14 from "./a (5).jpg";
-import image15 from "./a (4).jpg";
-import image16 from "./a (3).jpg";
-
 import "./Dev.css";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
 
-export default function Dev(){
+export default function Dev({
+  name, 
+  description, 
+  img,
+  url
+}){
+  var button = ''
+  if (url) {
+    button = <Button className="ent--btn" as="a" href={url} variant="outline-primary" target="_blank">More 
+    Info</Button>
+  } else { button = ""};
     return (
-        <Container className="dev--container">
-        <Row className="m-0">
-        <Card className="col dev--card bg-dark text-white m-1 overlay">
-          <Card.Img src={image14} alt="Card image" />
-            <Card.Title>Javascript</Card.Title>
-            <Card.Text className="cardText">
-              This is a wider card with supporting text below as a natural lead-in to
-              additional content. This content is a little bit longer.
-            </Card.Text>
-            <Button className="dev--btn" variant="outline-primary">Go somewhere</Button>
+        <Card className="col ent--card bg-dark text-white m-1 overlay">
+          <Card.Img src={img} alt="Card image" />
+          <Card.Title>{name}</Card.Title>
+          <Card.Text className="cardText">
+            {description}
+          </Card.Text>
+          {button}
         </Card>
-<Card className="col dev--card bg-dark text-white m-1 overlay">
-  <Card.Img src={image15} alt="Card image" />
-    <Card.Title>React</Card.Title>
-    <Card.Text className="cardText">
-      This is a wider card with supporting text below as a natural lead-in to
-      additional content. This content is a little bit longer.
-    </Card.Text>
-    <Button className="dev--btn" variant="outline-primary">Go somewhere</Button>
-</Card>
-<Card className="col dev--card bg-dark text-white m-1 overlay">
-  <Card.Img src={image16} alt="Card image" />
-    <Card.Title>HTML</Card.Title>
-    <Card.Text className="cardText">
-      This is a wider card with supporting text below as a natural lead-in to
-      additional content. This content is a little bit longer.
-    </Card.Text>
-    <Button className="dev--btn" variant="outline-primary">Go somewhere</Button>
-</Card>
-</Row>
-</Container>
 )
 }

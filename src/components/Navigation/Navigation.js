@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import data from "./data";
 import edu from "./edu";
+import devData from "./devData";
 
 import Carousel from "../C_Carousel/C_Carousel";
 import Portfolio from "../Portfolio/Portfolio";
@@ -53,7 +54,7 @@ export default function Navigation(){
                 <Nav.Link className="nav--link" eventKey="enthusiast">Enthusiast</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link className="nav--link" eventKey="dev">Dev</Nav.Link>
+                <Nav.Link className="nav--link" eventKey="dev">This website was created using 👉</Nav.Link>
               </Nav.Item>
             </Nav>
           </Col>
@@ -114,7 +115,19 @@ export default function Navigation(){
                 </Container>
               </Tab.Pane>
               <Tab.Pane eventKey="dev">
-                <Dev />
+              <Container className="ent--container">
+              <Row className="m-0">
+                  {devData.map(item => (
+                  <Dev
+                  name={item.name}
+                  key={item.id}
+                  description={item.description}
+                  url={item.html_url}
+                  img={item.image}
+                  />
+                ))}
+                </Row>
+                </Container>
               </Tab.Pane>
             </Tab.Content>
           </Col>

@@ -27,8 +27,8 @@ export default function ControlledCarousel() {
                 alt="placeholder neon citylights"
               />
               <Carousel.Caption>
-                <h3>PlaceHolder Title</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <h3>City of Dreams</h3>
+                <p>Building Websites</p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -39,8 +39,8 @@ export default function ControlledCarousel() {
               />
       
               <Carousel.Caption>
-                <h3>PlaceHolder Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3>Sharing Knowledge</h3>
+                <p>Community Solutions</p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -52,7 +52,7 @@ export default function ControlledCarousel() {
       
               <Carousel.Caption>
                 <h3>It's Me!</h3>
-                <p>I'm a Junior Developer excited to continuously learn and develop</p>
+                <p>I'm a Website Developer excited to continuously learn and create</p>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>

@@ -31,22 +31,27 @@ export default function Contact(){
         console.log("prevent default");
         e.preventDefault();
       
-        // When a post request is sent to the create url, we'll add a new record to the database.
+        //make Post to AWS Lambda which sends JSON to MongoDB
         const newContact = { ...form };
         var xhr = new XMLHttpRequest();
         xhr.open("POST", "https://cpsrzg5uur5wiophmnozwolz5i0bhajl.lambda-url.us-east-1.on.aws/", true);
         xhr.setRequestHeader("Content-Type", "application/json");
         xhr.send(JSON.stringify(newContact));
-      
+        //clear form and close module with a thank you
         setForm({ name: "", company: "", email: "", message:"" });
         handleClose();
+        handleSent();
         navigate("/");
         console.log("navigate to root");
       }
-
+    //confirm Modal
     const [show, setShow] = useState(false);
     const handleShow = () => setShow(true);
-    const handleClose = () => setShow(false);
+    const handleClose = () => setShow(false); 
+    //thank you modal
+    const [sent, sentShow] = useState(false);
+    const handleSent = () => sentShow(true);
+    const sentClose = () => sentShow(false); 
     
     return (
         <Container className="contact--container">
@@ -94,6 +99,15 @@ export default function Contact(){
                     </Modal.Footer>
                 </Modal>
             </Form>
+                <Modal centered show={sent} onHide={sentClose}>
+                    <Modal.Header className="bg-dark text-white" closeButton>
+                        <h1>Thank you</h1></Modal.Header>
+                    <Modal.Footer className="bg-dark text-white">
+                        <Button variant="secondary" onClick={sentClose}>
+                            Close
+                        </Button>
+                    </Modal.Footer>
+                </Modal>
         </Container>
     )
 }
