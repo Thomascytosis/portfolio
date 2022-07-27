@@ -3,7 +3,8 @@ import dice from "../images/dice.png";
 import ps5 from "../images/PS5white.png";
 import star from "../images/PiscesOnEHoverHurston720p.png";
 import twitch from "../images/twitch.png";
-import computer from "../images/PCrig.jpg"
+import computer from "../images/PCrig.jpg";
+import ue5 from "../images/UE5.png";
 
 export default [
     {
@@ -19,6 +20,13 @@ export default [
       description: "Dungeons and Dragons is a high fantasy medieval combat game",
       image: dnd,
       html_url: "https://dnd.wizards.com/"
+    },
+    {
+      id: 12,
+      name: "Unreal Engine 5",
+      description: "The world’s most open and advanced real-time 3D creation tool",
+      image: ue5,
+      html_url: "https://www.unrealengine.com/en-US/unreal-engine-5"
     },
     {
       id: 13,

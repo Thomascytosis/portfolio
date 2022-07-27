@@ -1,7 +1,7 @@
 .port--card{
     overflow:auto;
-    min-width: 200px;
-    min-height: 280px;
+    min-width: 250px;
+    min-height: 350px;
     text-shadow: 1px 1px 1px black;
 }
 

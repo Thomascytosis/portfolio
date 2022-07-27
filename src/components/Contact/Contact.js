@@ -34,7 +34,7 @@ export default function Contact(){
         //make Post to AWS Lambda which sends JSON to MongoDB
         const newContact = { ...form };
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "https://cpsrzg5uur5wiophmnozwolz5i0bhajl.lambda-url.us-east-1.on.aws/", true);
+        xhr.open("POST", process.env.REACT_APP_LAMBDA_URL , true);
         xhr.setRequestHeader("Content-Type", "application/json");
         xhr.send(JSON.stringify(newContact));
         //clear form and close module with a thank you
